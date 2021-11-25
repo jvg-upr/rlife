@@ -1,4 +1,4 @@
-use life::{Life, LifeGrid};
+use rlife::{Life, LifeGrid};
 use log::{debug, info};
 use minifb::{Key, KeyRepeat, MouseButton, MouseMode, Window, WindowOptions};
 use std::sync::{mpsc, Arc, RwLock};
