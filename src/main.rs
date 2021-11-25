@@ -92,7 +92,7 @@ fn main() {
     };
 
     // frame buffer
-    info!("initialize frame buffer");
+    info!("initializing frame buffer");
     let mut buffer = [0x0; WIDTH * HEIGHT];
 
     // I/O thread
