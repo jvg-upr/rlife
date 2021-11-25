@@ -15,14 +15,14 @@ rlife uses minifb to create a simple window, on linux minifb needs a few depende
 ```
 sudo apt install libxkbcommon-dev libwayland-cursor0 libwayland-dev
 ```
-command may vary depending on the linux distribution
+Command may vary depending on the linux distribution
 
 ### Building
 ```
 cargo build --release
 ```
 
-### running
+### Running
 ```
 sudo run --release
 ```
