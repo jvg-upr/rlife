@@ -97,7 +97,6 @@ fn main() {
 
     // I/O thread
     info!("starting I/O handling");
-
     while window.is_open() && !window.is_key_down(Key::Escape) {
         // manage user input
 
