@@ -86,7 +86,7 @@ fn main() {
         std::thread::spawn(move || {
             info!("simulation thread started");
             let task = sim_task(curr, Box::new(LifeGrid::<WIDTH, HEIGHT>::default()), pause_rx);
-            info!("simulation thread ");
+            info!("simulation thread finished");
             task
         })
     };
