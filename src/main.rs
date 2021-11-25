@@ -101,13 +101,15 @@ fn main() {
     while window.is_open() && !window.is_key_down(Key::Escape) {
         // manage user input
 
-        // exit input
+        // keyboard input
+        // pause/resume simulation
         if window.is_key_pressed(Key::Space, KeyRepeat::No) {
             debug!("sending simulation toggle signal");
             pause_tx.send(()).unwrap();
         }
 
         // mouse input
+        // set selected cell alive/dead
         if let Some((x, y)) = window
             .get_mouse_pos(MouseMode::Discard)
             .map(|(x, y)| (x as usize, y as usize))
