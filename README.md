@@ -24,5 +24,5 @@ cargo build --release
 
 ### Running
 ```
-sudo run --release
+cargo run --release
 ```
